@@ -1,0 +1,41 @@
+.registration-form {
+    background-image: linear-gradient(to right bottom, skyblue, violet);
+    background-size: cover;
+    width: 100%;
+    padding: 72px;
+}
+.registration-card {
+    background-color: white;
+    background-size: cover;
+    margin: 50px;
+}
+.heading-registration {
+    font-family: "Roboto";
+    font-size: 38px;
+    font-weight: bold;
+}
+.heading-gender {
+    font-family: "Roboto";
+    font-size: 32px;
+    font-weight: bold;
+}
+.paragarph {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 600;
+}
+.paragraph-text {
+    font-family: "Roboto";
+    font-size: 22px;
+    font-weight: 500;
+}
+.button {
+    height: 42px;
+    border-radius:4px;
+    border-width: 0px;
+    font-family: "Roboto";
+    font-size: 22px;
+    font-weight: 500;
+    color: white;
+    background-image: linear-gradient(to right bottom, skyblue, violet);
+}

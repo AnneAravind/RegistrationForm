@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Day 06
+        </title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <script>
+            function validateform(){
+                var username=document.register.username.value;
+                var fullname=document.register.fullname.value;
+                var email=document.register.email.value;
+                var phone=document.register.phone.value;
+                var password=document.register.password.value;
+                var confirmpassword=document.register.confirmpassword.value;
+
+                if( username==""){
+                    alert("username can't be blank");
+                }
+                if( fullname==""){
+                    alert("fullname can't be blank");
+                }
+                if( email==""){
+                    alert("email can't be blank");
+                }
+                if( phone==""){
+                    alert("phone can't be blank");
+                }
+            }
+        </script>
+        <div class="container-fulid">
+            <div class="row">
+                <div class="registration-form">
+                    <div class="registration-card p-4">
+                        <h1 class="heading-registration col-12">
+                            Registration
+                        </h1>
+                        <form id="myForm">
+                            <div class="col-12 d-flex flex-row">
+                                <div class="mb-3 col-12 col-md-6">
+                                    <label for="name" class="paragraph-text">Full Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter your name" />
+                                    <p id="nameErrMsg" class="error-message"></p>
+                                </div>
+                                <div class="mb-3 col-12 col-md-6">
+                                    <label for="name" class="paragraph-text">Username</label>
+                                    <input type="text" class="form-control" id="userName" placeholder="Enter your username" />
+                                    <p id="nameErrMsg" class="error-message"></p>
+                                </div>
+                            </div>
+                            <div class="col-12 d-flex flex-row">
+                                <div class="mb-3 col-6">
+                                    <label for="name" class="paragraph-text">Email</label>
+                                    <input type="text" class="form-control" id="email" placeholder="Enter your email" />
+                                    <p id="nameErrMsg" class="error-message"></p>
+                                </div>
+                                <div class="mb-3 col-6">
+                                    <label for="name" class="paragraph-text">Phone Number</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter your number" />
+                                    <p id="phoneNumberErrMsg" class="error-message"></p>
+                                </div>
+                            </div>
+                            <div class="col-12 d-flex flex-row">
+                                <div class="mb-3 col-6">
+                                    <label for="name" class="paragraph-text">Password</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter your password" />
+                                    <p id="nameErrMsg" class="error-message"></p>
+                                </div>
+                                <div class="mb-3 col-6">
+                                    <label for="name" class="paragraph-text">Confirm Password</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Confirm your password" />
+                                    <p id="nameErrMsg" class="error-message"></p>
+                                </div>
+                            </div>
+                            <div class="mb-3 col-12">
+                                <h2 class="heading-gender">
+                                    Gender
+                                </h2>
+                                <input type="radio" name="gender" id="genderMale" value="Male" checked />
+                                <label for="genderMale" class="ml-1 mr-5 paragraph">Male</label>
+                                <input type="radio" name="gender" id="genderFemale" value="Female" />
+                                <label for="genderFemale" class="ml-1 mr-5 paragraph">Female</label>
+                                <input type="radio" name="gender" id="genderNotPrefer" value="Male" />
+                                <label for="genderNotPrefer" class="ml-1 mr-5 paragraph">Prefer not to say</label>
+                            </div>
+                                <button class="button col-12">
+                                    Register
+                                </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
